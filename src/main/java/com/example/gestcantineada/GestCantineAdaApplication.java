@@ -32,7 +32,6 @@ public class GestCantineAdaApplication implements CommandLineRunner {
 
         MenuDTO menuDTO = new MenuDTO();
         menuDTO.setCreation_date(Instant.now());
-        menuDTO.setPlat(new Plat());
         menuService.save(menuDTO);
     }
 }

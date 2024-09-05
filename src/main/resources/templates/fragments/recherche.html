@@ -1,0 +1,37 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+  <nav th:fragment="recherche" class="col-md-2 bg-light">
+    <div class="container-fluid py-1 px-3">
+
+
+      <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <ul class="navbar-nav  justify-content-start">
+          <li class="nav-item d-flex align-items-center">
+            <a class="btn btn-outline-warning btn-sm mb-0 me-3" href="#">Ajouter un menu</a>
+          </li>
+        </ul>
+        <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+          <div class="input-group input-group-outline">
+            <label class="form-label">Recherche par nom</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <ul class="navbar-nav  justify-content-end">
+          <li class="nav-item d-flex align-items-center">
+            <button class="btn btn-outline-primary btn-sm mb-0 me-3">Recherche</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </body>
+</html>
+
