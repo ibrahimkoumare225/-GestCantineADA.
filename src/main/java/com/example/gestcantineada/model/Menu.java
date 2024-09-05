@@ -1,19 +1,17 @@
 package com.example.gestcantineada.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
 
-@Data
+import java.time.Instant;
+
 @Entity
 public class Menu {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    String name;
-    String summary;
+    private Instant creation_date;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "plat_id")
+    @OneToOne
     private Plat plat;
 }

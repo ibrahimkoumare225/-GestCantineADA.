@@ -8,5 +8,6 @@ import java.time.Instant;
 public class PlatDTO {
 
     Long id;
-    private Instant creation_date;
+    String name;
+    String summary;
 }
