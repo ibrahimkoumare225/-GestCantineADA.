@@ -38,7 +38,7 @@ public class PlatController {
         Optional<PlatDTO> plat = platService.findOne(id);
         if (plat.isPresent()){
             model.addAttribute("plats" , plat.get());
-            return "pages/plats";
+            return "pages/forms";
         } else {
             return "redirect:/platHome";
         }

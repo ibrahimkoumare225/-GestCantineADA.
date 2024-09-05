@@ -32,7 +32,10 @@
                       <td th:text="${plat.getName()}">
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <button class="badge badge-sm bg-gradient-success">Modifier</button>
+
+                        <button class="badge badge-sm bg-gradient-success">
+                          <a class="text-decoration-none" th:href="@{/plat/{id}(id=${plat.id})}">Modifier</a>
+                        </button>
                         <button class="badge badge-sm bg-gradient-danger">Supprimer</button>
                       </td>
                     </tr>
