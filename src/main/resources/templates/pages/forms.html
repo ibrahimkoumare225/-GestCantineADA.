@@ -17,8 +17,7 @@
                             <div class="card-body">
                                 <form th:object="${plats}" th:action="@{/platHome}" method="post" role="form">
                                     <div class="input-group input-group-outline mb-3">
-                                        <label class="form-label">Libelle</label>
-                                        <input th:field="*{name}"type="text" class="form-control">
+                                        <input th:field="*{name}"type="text" placeholder="Libelle" class="form-control">
                                     </div>
                                     <div class="input-group input-group-outline mb-3">
                                         <input type="date" class="form-control">

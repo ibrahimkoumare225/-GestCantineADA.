@@ -30,6 +30,11 @@ public class GestCantineAdaApplication implements CommandLineRunner {
         plat1.setSummary("Senegal");
         platService.save(plat1);
 
+        PlatDTO plat2 = new PlatDTO();
+        plat2.setName("Fritte");
+        plat2.setSummary("France");
+        platService.save(plat2);
+
         MenuDTO menuDTO = new MenuDTO();
         menuDTO.setCreation_date(Instant.now());
         menuService.save(menuDTO);
